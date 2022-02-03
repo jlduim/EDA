@@ -1,6 +1,6 @@
 # Waze App
 
-Este repositório contém o MiniWaze, projeto desenvolvidos pelos alunos João Pedro Donasolo, Fernanda e João Lucas Duim como trabalho final para a matéria de Estrutura de Dados e Algorítmos.
+Este repositório contém o MiniWaze, projeto desenvolvido pelos alunos João Lucas Duim, João Pedro Giordani Donasolo e Fernanda Luísa Silva Gomes como projeto da disciplina de Estruturas de Dados e Algoritmos da graduação em Matemática Aplicada da FGV EMAp.
 
 As dependências necessárias para a compilação são
 
@@ -28,4 +28,4 @@ Também é possível rodar a aplicação pela linha de comando. Para compilar:
 g++ main.cpp structs.cpp funcs.cpp -o main -O2 -ljsoncpp
 ```
 
-Quando aberto, o arquivo vai pedir pelo algorítmo a ser usado, assim como por dois pares de latitude e longitude, sendo o primeiro referente ao nó de origem e o segundo ao nó de destino. 
+Quando aberto, o arquivo vai pedir pelo algoritmo a ser usado, assim como por dois pares de latitude e longitude, sendo o primeiro referente ao nó de origem e o segundo ao nó de destino. 
