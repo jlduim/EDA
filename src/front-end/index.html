@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Final Project - Mini Waze</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        #mapid {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+</head>
+
+<body>
+
+    <h1>Enviando coordenadas</h1>
+    <h3>Clique no mapa sobre o ponto de origem e, posteriormente, sobre o ponto de destino.</h3>
+
+    <form action="localhost:60000" method="get">
+        <input id="latitude_origem" type="text" placeholder="Latitude da origem" name="lat_o">
+        <input id="longitude_origem" type="text" placeholder="Longitude da origem" name="lng_o">
+        <input id="latitude_destino" type="text" placeholder="Latitude do destino" name="lat_d">
+        <input id="longitude_destino" type="text" placeholder="Longitude do destino" name="lng_d">
+        <select id="algoritmo" name="alg">
+            <option disabled="disabled">Selecione o algoritmo de busca:</option>
+            <option value=0>Djikstra</option>
+            <option value=1>A*</option>
+        </select>
+        <button onclick="CalculaRota()" type="button" id="get_btn">Calcular rota</button>
+        <input id="tempo_execucao" type="text" placeholder="Runtime do algoritmo">
+        <button onclick="LimpaMarcadores()" type="button" id="reload">Limpar Marcadores</button>
+    </form>
+    <br>
+
+    <div id="mapid"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
