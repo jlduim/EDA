@@ -1,6 +1,6 @@
 # Waze App
 
-Este repositório contém o MiniWaze, desenvolvido pelos alunos João Lucas Duim, João Pedro Giordani Donasolo e Fernanda Luísa Silva Gomes como projeto final da disciplina de Estruturas de Dados e Algoritmos da graduação em Matemática Aplicada da FGV EMAp.
+Este repositório contém o MiniWaze, desenvolvido pelos alunos João Lucas Duim, João Pedro Giordani Donasolo e Fernanda Luísa Silva Gomes como projeto final da disciplina de Estruturas de Dados e Algoritmos da graduação em Matemática Aplicada pela FGV EMAp.
 
 As dependências necessárias para a compilação são
 
