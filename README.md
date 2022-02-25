@@ -2,6 +2,8 @@
 
 Este repositório contém o MiniWaze, desenvolvido pelos alunos João Lucas Duim, João Pedro Giordani Donasolo e Fernanda Luísa Silva Gomes como projeto final da disciplina Estruturas de Dados e Algoritmos das graduações em Matemática Aplicada, Ciência de Dados e Inteligência Artificial pela FGV EMAp.
 
+Professor: [Jorge Poco](https://emap.fgv.br/professores/jorge-poco)
+
 As dependências necessárias para a compilação são
 
 * libjsoncpp-dev = 1.7.4-3.1ubuntu2
